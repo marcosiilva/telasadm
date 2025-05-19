@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="style9.css" />
+</head>
+
+<body>
+    <main class="container">
+        
+        <section class="form-section">
+            <h2>Controle do Estoque</h2>
+            <h4>Adicionar produtos</h4>
+            <label>Nome</label>
+            <input type="text" placeholder="Nome do produto">
+
+            <label>Quantidade</label>
+            <input type="number" placeholder="Quantidade de produtos">
+
+            <label>Seção</label>
+            <select>
+                <option value="">Selecione uma seção</option>
+                <option value="pneus">Pneus</option>
+                <option value="borracha-industrial">Borracha Industrial</option>
+                <option value="resíduos-domésticos">Resíduos Domésticos</option>
+                <option value="retalhos">Retalhos</option>
+                <option value="outros">Outros</option>
+            </select>
+
+            <label>Preço Unitário</label>
+            <input type="text" placeholder="Preço unitário">
+
+            <button class="adicionar-btn">
+                Adicionar <span>+</span>
+            </button>
+        </section>
+
+        
+        <section class="tabela-section">
+            <h3>Lista de Produtos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Quantidade</th>
+                        <th>Preço un.</th>
+                        <th>Preço total</th>
+                        <th>Seção</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pneu</td>
+                        <td>12</td>
+                        <td>R$75,00</td>
+                        <td>R$900,00</td>
+                        <td>Outros</td>
+                        <td>
+                            <img src="/assets/img/icones/botao-editar.png" alt="Editar" class="icon">
+                            <img src="/assets/img/icones/lixeira-de-reciclagem.png" alt="Excluir" class="icon">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

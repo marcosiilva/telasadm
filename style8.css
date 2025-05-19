@@ -1,0 +1,154 @@
+:root {
+  --bg-principal: #1E1E26;
+  --bg-sidebar: #18181E;
+  --texto-claro: #ffffff;
+  --verde-card: #194A26;
+  --cinza-divisor: #888;
+  --fundo-avaliacao: #404040;
+  --vermelho-alerta: #ff0000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-principal);
+  font-family: Arial, sans-serif;
+  color: var(--texto-claro);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  padding: 20px;
+  background-color: var(--bg-sidebar);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-foto {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.admin-nome {
+  font-weight: bold;
+  text-align: center;
+}
+
+.conteudo {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topo h1 {
+  font-size: 20px;
+}
+
+.icones {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.notificacao {
+  position: relative;
+}
+
+.notificacao img {
+  width: 24px;
+}
+
+.contador {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--vermelho-alerta);
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon {
+  width: 24px;
+}
+
+.divisor {
+  margin: 15px 0;
+  border: none;
+  height: 3px;
+  background-color: var(--cinza-divisor);
+  border-radius: 10px;
+}
+
+.grade-coletores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--verde-card);
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: #216339; 
+}
+
+.coletor-foto {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.info p {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.cargo {
+  font-weight: normal;
+}
+
+.avaliacao {
+  margin-top: 5px;
+  background-color: var(--fundo-avaliacao);
+  border-radius: 10px;
+  padding: 2px 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: fit-content;
+}
+
+.avaliacao img {
+  width: 14px;
+}

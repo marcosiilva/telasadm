@@ -1,0 +1,102 @@
+:root {
+  --cor-fundo: #222229;
+  --cor-branco: #ffffff;
+  --cor-verde: #1A9A22;
+  --cor-cinza: #444;
+  --cor-preto-opaco: rgba(0, 0, 0, 0.3);
+  --font: Arial, sans-serif;
+  --cor-card: #121217;
+  --cor-input: #2c2c34;
+  --cor-borda: #1A9A22;
+  --cor-select: #ffffff;
+  --radius: 6px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background-color: var(--cor-fundo);
+  color: var(--cor-branco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pagamento-container {
+  background-color: var(--cor-card);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 400px;
+}
+
+.pagamento-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.pagamento-container p {
+  font-weight: bold;
+  color: var(--cor-cinza);
+  margin-bottom: 12px;
+}
+
+ul.formas {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+}
+
+ul.formas li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #aaa;
+  font-weight: bold;
+  padding: 8px 0;
+}
+
+.trash {
+  font-size: 16px;
+  cursor: pointer;
+  color: #777;
+}
+
+.trash:hover {
+  color: #ff4d4d;
+}
+
+.adicionar-btn {
+  padding: 14px 24px;
+  background-color: var(--cor-verde);
+  color: var(--cor-branco);
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.adicionar-btn:hover {
+  background-color: #148017;
+  transform: translateY(-2px);
+}
+
+.voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: var(--cor-verde);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.voltar:hover {
+  transform: scale(1.1);
+}

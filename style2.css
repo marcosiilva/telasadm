@@ -1,0 +1,92 @@
+:root {
+      --cor-fundo: #222229;
+      --cor-branco: #ffffff;
+      --cor-verde: #1A9A22;
+      --cor-cinza: #444;
+      --cor-preto-opaco: rgba(0, 0, 0, 0.3);
+      --font: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background-color: var(--cor-fundo);
+      color: var(--cor-branco);
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: var(--cor-fundo);
+      border-bottom: 1px solid var(--cor-cinza);
+    }
+
+    .perfil {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .perfil img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .perfil span {
+      font-weight: bold;
+    }
+
+    .icones {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .icone {
+      font-size: 20px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .notificacao {
+      position: absolute;
+      top: -5px;
+      right: -10px;
+      background: red;
+      color: white;
+      border-radius: 50%;
+      padding: 2px 6px;
+      font-size: 10px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    .botao {
+      background-color: var(--cor-verde);
+      border: none;
+      color: var(--cor-branco);
+      padding: 15px 25px;
+      margin: 10px 0;
+      width: 300px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    .botao:hover {
+      background-color: #14801b;
+    }

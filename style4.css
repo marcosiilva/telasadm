@@ -1,0 +1,176 @@
+:root {
+    --cor-fundo: #222229;
+    --cor-branco: #ffffff;
+    --cor-verde: #1A9A22;
+    --cor-cinza: #444;
+    --cor-preto-opaco: rgba(0, 0, 0, 0.3);
+    --font: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    display: flex;
+    background-color: var(--cor-fundo);
+    color: var(--cor-branco);
+    min-height: 100vh;
+}
+
+/* Sidebar */
+aside {
+    background-color: var(--cor-cinza);
+    width: 80px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid var(--cor-cinza);
+}
+
+aside img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+aside p {
+    font-size: 12px;
+    text-align: center;
+    color: #ccc; /* Você pode criar uma variável para esse tom se quiser */
+}
+
+/* Conteúdo principal */
+main {
+    flex: 1;
+    padding: 20px 40px;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo h2 {
+    font-size: 20px;
+}
+
+.notificacao {
+    position: relative;
+}
+
+.notificacao img {
+    width: 24px;
+    height: 24px;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red; /* Pode criar uma var para vermelho, se quiser */
+    color: var(--cor-branco);
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+/* Linha divisória */
+.linha {
+    height: 2px;
+    background-color: var(--cor-cinza);
+    margin: 20px 0;
+}
+
+/* Grid dos cards */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Card de perfil */
+.card {
+    background-color: #21e22a34; /* essa cor é semi transparente, pode manter assim */
+    border-radius: 20px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px var(--cor-preto-opaco);
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: #c9d3c95b; /* Também transparente, pode manter */
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.detalhes p {
+    font-size: 14px;
+    color: var(--cor-branco);
+}
+
+.avaliacao {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.avaliacao img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.avaliacao span {
+    font-size: 14px;
+    color: var(--cor-branco);
+}
+
+/* Ações do card */
+.acoes img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Botões */
+.botoes {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botoes button {
+    background-color: var(--cor-verde);
+    color: var(--cor-branco);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botoes button:hover {
+    background-color: #2e9d32; /* Pode criar var se quiser */
+}

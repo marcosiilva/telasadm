@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cadastro de Perfil</title>
+<link rel="stylesheet" href="style5.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="back-arrow" title="Voltar">&#8592;</div>
+  <h1>Cadastre o perfil</h1>
+
+  <label for="tipo-usuario" class="tipo-usuario">Tipo de usuário:</label>
+  <input type="text" id="tipo-usuario" placeholder="Digite o tipo de usuário" />
+
+  <fieldset>
+    <legend>Dados que terá no perfil:</legend>
+    <div class="checkbox-group">
+      <label class="checkbox-item"><input type="checkbox" name="dados" value="celular" /> Celular</label>
+      <label class="checkbox-item"><input type="checkbox" name="dados" value="nome" /> Nome</label>
+      <label class="checkbox-item"><input type="checkbox" name="dados" value="endereco" /> Endereço</label>
+      <label class="checkbox-item"><input type="checkbox" name="dados" value="cnpj" /> CNPJ</label>
+      <label class="checkbox-item"><input type="checkbox" name="dados" value="email" /> Email</label>
+      <label class="checkbox-item"><input type="checkbox" name="dados" value="cpf" /> CPF</label>
+      <label class="checkbox-item"><input type="checkbox" name="dados" value="senha" /> Senha</label>
+    </div>
+  </fieldset>
+
+  <button class="confirmar">Confirmar</button>
+</div>
+
+</body>
+</html>

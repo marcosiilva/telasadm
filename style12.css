@@ -1,0 +1,94 @@
+:root {
+  --cor-fundo: #222229;
+  --cor-branco: #ffffff;
+  --cor-verde: #1A9A22;
+  --cor-cinza: #888;
+  --cor-card: #121217;
+  --cor-input: #2c2c34;
+  --radius: 6px;
+  --font: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--cor-fundo);
+  font-family: var(--font);
+  color: var(--cor-branco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--cor-card);
+  padding: 40px;
+  border-radius: var(--radius);
+  width: 400px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.subtitulo {
+  color: var(--cor-cinza);
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 7px;
+}
+
+.opcoes {
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.opcoes label {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--cor-branco);
+}
+
+input[type="radio"] {
+  accent-color: var(--cor-verde);
+  margin-right: 8px;
+}
+
+.input-descricao {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--cor-input);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--cor-branco);
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.btn-confirmar {
+  width: 100%;
+  padding: 14px;
+  background-color: var(--cor-verde);
+  color: var(--cor-branco);
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-confirmar:hover {
+  background-color: #148017;
+}
+
+.voltar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  color: var(--cor-verde);
+  text-decoration: none;
+}
