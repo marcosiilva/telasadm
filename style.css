@@ -25,7 +25,7 @@ body {
 .container {
   text-align: center;
   color: var(--cor-branco);
-  transform: translateY(-50px); /* Move o conteúdo para cima */
+  transform: translateY(-50px); 
 }
 
 .logo {
