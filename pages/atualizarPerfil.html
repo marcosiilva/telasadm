@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atualizar Perfil</title>
+  <link rel="stylesheet" href="../estilos/atualizarPerfil.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="#" class="back-arrow">←</a>
+      <h1>Atualize o perfil</h1>
+    </div>
+
+    <form>
+  <fieldset>
+    <legend>Tipo de perfil:</legend>
+    <label>
+      <input type="radio" name="perfil" value="coleta"> Empresa que coleta
+    </label>
+    <br><br>
+    <label> 
+      <input type="radio" name="perfil" value="descarta"> Empresa que descarta
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Atualizar dados:</legend>
+    <div class="form-grid">
+      <div class="input-group">
+        <label>Celular:</label>
+        <input type="text" name="celular" placeholder="Digite seu celular">
+      </div>
+      <div class="input-group">
+        <label>Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome">
+      </div>
+      <div class="input-group">
+        <label>Endereço:</label>
+        <input type="text" name="endereco" placeholder="Digite seu endereço">
+      </div>
+      <div class="input-group">
+        <label>CNPJ:</label>
+        <input type="text" name="cnpj" placeholder="Digite seu CNPJ">
+      </div>
+      <div class="input-group">
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Digite seu email">
+      </div>
+      <div class="input-group">
+        <label>CPF:</label>
+        <input type="text" name="cpf" placeholder="Digite seu CPF">
+      </div>
+      <div class="input-group full">
+        <label>Senha:</label>
+        <input type="password" name="senha" placeholder="Digite sua senha">
+      </div>
+    </div>
+  </fieldset>
+
+  <button type="submit" class="btn-confirmar">Confirmar</button>
+</form>
+  </div>
+</body>
+</html>

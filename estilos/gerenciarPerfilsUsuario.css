@@ -4,6 +4,7 @@
     --cor-verde: #1A9A22;
     --cor-cinza: #444;
     --cor-preto-opaco: rgba(0, 0, 0, 0.3);
+    --bg-sidebar: #18181E;
     --font: Arial, sans-serif;
 }
 
@@ -23,7 +24,7 @@ body {
 
 /* Sidebar */
 aside {
-    background-color: var(--cor-cinza);
+    background-color: var(--bg-sidebar);
     width: 80px;
     padding: 20px 10px;
     display: flex;

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Adicionar Forma de Pagamento</title>
+  <!-- Link externo do CSS -->
+  <link rel="stylesheet" href="../estilos/addPagamentos.css">
+</head>
+<body>
+
+  <a href="#" class="voltar">←</a>
+
+  <div class="container">
+    <h2>Adicione uma forma de<br>pagamento</h2>
+
+    <p class="subtitulo">Formas de pagamento disponíveis:</p>
+    <div class="opcoes" id="lista-pagamentos">
+      
+    </div>
+
+    <p class="subtitulo">Escolha a forma de pagamento:</p>
+    <select class="select-forma" id="select-forma">
+      <option value="Pix">Pix</option>
+      <option value="Cartão de Débito">Cartão de Débito</option>
+      <option value="Cartão de Crédito">Cartão de Crédito</option>
+      <option value="Dinheiro">Dinheiro</option>
+    </select>
+
+    <button class="btn-confirmar" id="btn-confirmar">Confirmar</button>
+  </div>
+
+  
+  <script src="/pages/verificAddPagamentos.js"></script>
+
+</body>
+</html>
